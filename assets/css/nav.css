@@ -1,0 +1,49 @@
+nav div {
+    display: flex;
+    align-items: center;
+
+}
+
+nav .left-side {
+    flex: 20%;
+    padding-left: 50px;
+}
+
+nav .right-side {
+    text-decoration: none;
+    flex: 0%;
+    padding-right: 50px;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right    : 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #ec4437;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav .right-side a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    background: #ec4437;
+    padding: 8px 20px;
+    margin-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
