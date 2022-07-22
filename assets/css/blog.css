@@ -1,0 +1,250 @@
+body {
+    background-color: whitesmoke;
+}
+
+.landing-page-contact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    margin-left: -32px;
+}
+
+.checkbox2 {
+    display: flex;
+    margin-left: -26px;
+}
+    
+.inputtext {
+    width: 98%;
+    
+  } 
+  
+form select{
+    width: 100%;
+  }
+  form div{
+    margin:10px;
+    width: 80%;
+    /* background-color: wheat; */
+  }
+  
+.inputtext,select,textarea{
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    border: 1px solid #c4c4c4  ;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 3px;
+  }
+form div textarea{
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    resize: none;
+  }
+  
+form .button{
+    display: flex;
+    justify-content: flex-end;
+  }
+ form div button{
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+form div button:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 255);
+    opacity: 70% ;
+  }
+  /* font */
+  
+  
+form p{
+    font-size: 23px;
+  }
+form label  {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+
+.blog .blog-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+.blog .blog-list .blog-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+.blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+  }
+  
+.blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+.blog .blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+  }
+  
+.blog .blog-list .btn-group {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+.blog .blog-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+  }
+  
+.blog .blog-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+  }
+  
+  .blog .blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+.blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+.blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  
+  
+  
+  /* Blog Form */
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+.blog-form .form-container {
+    width: 500px;
+  }
+  
+.blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+.blog-form form input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+  }
+  
+.blog-form form textarea {
+    height: 250px;
+  }
+  
+.blog-form form .input-blog-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+.blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+  }
+  
+.blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.blog-form form .button-group {
+    text-align: right;
+  }
+  
+.blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.blog-detail-container {
+
+  /* border: 1px solid black; */
+  width: 1000px;
+  margin-top: 70px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-left: 350px;
+  box-shadow: 0px 0px 30px rgb(79,79,79);
+
+}

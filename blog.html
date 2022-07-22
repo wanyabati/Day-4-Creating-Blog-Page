@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/blog.css"/>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/img/Dumbways-Logo.png" style="width: 50px;" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home </a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addProject(event)">
+                    <p style="font-weight: bolder;">ADD PROJECT</p>
+                    <div>
+                      <label for="input-project-name" style="font-weight: bolder;">Project Name</label>
+                      <input class="inputtext" id="input-project-name" type="text" placeholder="Project Name" style="background-color: white;">
+                    </div>
+                    <div style="display:flex;">
+                      <div>
+                        <label for="startDate" style="font-weight: bolder;">Start Date</label>
+                        <input id="startDate" type="date" style="margin-right: 0px; background-color: white;" >
+                      </div>
+                      <div>
+                        <label for="endDate" style="font-weight: bolder;">End Date</label>
+                        <input  id="endDate" type="date" style="margin-left: 15px; background-color: white;">
+                      </div>
+                  </div>
+                  <div>
+                    <label for="description">Description</label>
+                    <textarea class="inputtext" id="description" placeholder="Description" style="background-color: white;"></textarea>
+                  </div>
+                  <div>
+                    <p>Tecnologies</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-NodeJS" style="margin-left: 15px; flex: 60%;">
+                        <label for="input-NodeJS">NodeJS</label>
+                        <input type="checkbox" id="input-ReactJS" style="margin-left: 50px; flex: 50%;">
+                        <label for="input-ReactJS">ReactJS</label>
+                    </div>
+                    <div class="checkbox2">
+                      <input type="checkbox" id="input-NextJS" style="margin-left: 15px; flex: 60%;">
+                      <label for="input-NextJS">NextJS</label>
+                      <input type="checkbox" id="input-TypeScript" style="margin-left: 60px;margin-right: -10px; flex: 50%;">
+                      <label for="input-TypeScript">TypeScript</label>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="input-image"></label>
+                    <input type="file" id="input-image" style="background-color:white;">
+                  </div>
+                  <div class="button">
+                    <button type="submit">UPLOAD</button>
+                  </div>
+                 
+                </form>
+            </div>
+        </div>
+        <div id="test">
+        </div>
+        <hr class="line" />
+
+        <!-- List Blog -->
+        <div id="contents" class="blog-list">
+            <!-- dynamic content would be here -->
+             <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/img/Jennie-Kim.jpeg" alt="" />
+                </div>
+                <div class="blog-content">
+                    <div class="btn-group">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                    </div>
+                    <h1>
+                        <a href="blog-detail.html" target="_blank">Kim Jennie Most Popular Girls From Blackpink</a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        04 Sep 2022 18:30 WIB | Wanya Batirillian
+                    </div>
+                    <p>
+                        Kim Jennie a.k.a Jennie from Blackpink on YG Entertaiment is a Girlgroup was born on Seoul 16 January 1996. The girl born from seoul is a trainer YG Entertaiment at 14 years old or on 2010 is she first training at YG Entertaiment.
+                    </p>
+                    <div style="text-align: right;">
+                        <span style="font-size: 15px; color: grey;">1 hour ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/blog.js"></script>
+    </div>
+</body>
+
+</html>
