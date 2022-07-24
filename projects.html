@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/projects.css"/>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/img/Dumbways-Logo.png" style="width: 50px;" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home </a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="project">
+      <form onsubmit="addPro(event)">
+          <h1>ADD MY PROJECT</h1>
+          <div class="pj">
+              <div class="name">
+                  <label for="nama">Project Name</label>
+                  <input id="nama" type="text">
+              </div>
+              <div class="date">
+                  <div class="kiri">
+                      <label for="start">Start Date</label>
+                      <input id="start" type="date">
+                  </div>
+                  <div class="kanan">
+                      <label for="end">End Date</label>
+                      <input id="end" type="date">
+                  </div>
+              </div>
+              </div>
+          <div class="description">
+              <label for="desc">Description</label>
+              <textarea name="" id="desc" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+              <label>Technology</label><br>
+              <div class="checkbox">
+                  <div class="kiri-cek">
+                      <input type="checkbox" id="node" name="node" value="node">
+                      <label for="node">Node JS</label><br>
+                      <input type="checkbox" id="js" name="js" value="js">
+                      <label for="js" ">JavaScript</label>   
+                  </div>
+                  <div class="kanan-cek">
+                      <input type="checkbox" id="react" name="react" value="react">
+                      <label for="react">React JS</label><br>
+                      <input type="checkbox" id="angular" name="angular" value="angular">
+                      <label for="angular">Angular</label>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <label for="file">Upload Image</label>
+              <div class="input">
+                  <label for="file" class="file">File</label>
+                  <input type="file" id="file" hidden>
+              </div>
+          </div>
+          <div class="upload">
+              <button>Post</button>
+          </div>
+      </form>
+  </div>
+
+
+        <!-- List Blog -->
+        <div id="content-post">
+          <h1 class="head">My Project</h1>       
+          <div id="project-post" class="project-post">
+          </div>
+      </div>
+      <script src="https://kit.fontawesome.com/9abab0ea8b.js" crossorigin="anonymous"></script>
+      <script src="assets/js/projects.js"></script>
+    </div>
+</body>
+
+</html>
