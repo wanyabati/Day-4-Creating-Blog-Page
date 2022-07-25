@@ -17,10 +17,10 @@ function addPro(event) {
         name,
         message,
         image,
-        html,
-        css,
+        node,
         js,
-        node
+        react,
+        angular
     }
 
     projects.push(project)
